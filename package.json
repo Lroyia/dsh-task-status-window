@@ -1,6 +1,6 @@
 {
-  "name": "dsh-task-status-window",
-  "version": "1.0.0",
+  "name": "@lroyia/dsh-task-status-window",
+  "version": "0.1.0",
   "description": "任务状态浮窗：把 DeepSeek Harness Desktop 的「运行中 / 待批准 / 办结待确认」任务放进一个系统级置顶窗口，切换到别的应用也能看到状态，点击即可回到对应任务。",
   "type": "module",
   "icon": "./icon.svg",
@@ -17,9 +17,26 @@
     "native/panel.py",
     "locale/*.json",
     "docs/DETAIL.md",
+    "docs/images/*.png",
     "icon.svg",
     "README.md"
   ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "desktop",
+    "always-on-top",
+    "task-status"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lroyia/dsh-task-status-window.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lroyia/dsh-task-status-window/issues"
+  },
+  "homepage": "https://github.com/Lroyia/dsh-task-status-window#readme",
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
