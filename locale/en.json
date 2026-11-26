@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Task status window",
+    "description": "Keeps running, awaiting-approval and finished tasks in an always-on-top window that follows the DeepSeek Harness desktop theme. Click a task to jump back to it.",
+    "detail": "docs/DETAIL.md"
+  }
+}

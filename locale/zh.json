@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "任务状态浮窗",
+    "description": "把运行中、待批准与办结待确认的任务放进一个始终置顶的窗口，样式跟随 DeepSeek Harness 桌面端主题；点击任务即可跳回对应任务。",
+    "detail": "docs/DETAIL.md"
+  }
+}

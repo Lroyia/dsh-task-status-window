@@ -1,0 +1,45 @@
+{
+  "name": "dsh-task-status-window",
+  "version": "1.0.0",
+  "description": "任务状态浮窗：把 DeepSeek Harness Desktop 的「运行中 / 待批准 / 办结待确认」任务放进一个系统级置顶窗口，切换到别的应用也能看到状态，点击即可回到对应任务。",
+  "type": "module",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "native/panel.py",
+    "locale/*.json",
+    "docs/DETAIL.md",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-plugin-manager",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "~3.19.0"
+  },
+  "license": "MIT"
+}
